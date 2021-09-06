@@ -1,0 +1,25 @@
+.btn {
+  background-color: $light-color;
+  color: $primary-color;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  border: none;
+  outline: none;
+  letter-spacing: 2px;
+
+  &:hover {
+    background-color: $primary-color;
+    color: $light-color;
+    transition: all 0.5s;
+  }
+
+  &-primary {
+    background-color: $primary-color;
+    color: $light-color;
+
+    &:hover {
+      background-color: $light-color;
+      color: $primary-color;
+    }
+  }
+}
