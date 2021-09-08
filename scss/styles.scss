@@ -448,3 +448,37 @@ img {
 .recent-game-6 {
   grid-area: item-6;
 }
+
+/* LATEST REVIEWED SECTION */
+
+.last-reviewed {
+  height: 50vh;
+  @include flex-display(flex, center, space-between);
+  flex-direction: row;
+  padding: 0;
+  overflow: hidden;
+  background-color: $secondary-color;
+
+  &-detail {
+    flex-basis: 40%;
+  }
+  &-image {
+    flex-basis: 60%;
+
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($primary-color, 0.6),
+        rgba($primary-color, 0.1)
+      ),
+      url(../img/game_3.jpg);
+    height: 100%;
+    background-size: cover;
+    clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+    transition: $general-transition;
+    overflow: hidden;
+
+    &:hover {
+      transform: scale(1.1) rotate(0deg);
+    }
+  }
+}
