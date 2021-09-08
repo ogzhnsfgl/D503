@@ -12,6 +12,7 @@ $date-color: #ffb320;
 $comment-color: #08abbd;
 $gray-color: #9f9f9f;
 $light-color: #fefefe;
+$general-transition: all 0.5s;
 
 /* UTILITIES */
 
@@ -44,6 +45,17 @@ Shorthand below
   &-1 {
     margin-right: 1rem;
   }
+}
+
+.text-light {
+  color: $light-color;
+}
+
+.text-primary {
+  color: $primary-color;
+}
+.text-center {
+  text-align: center;
 }
 
 /* MIXINS */
