@@ -65,3 +65,41 @@ Shorthand below
   align-items: $aling-items;
   justify-content: $justify-content;
 }
+
+$breakpoints: (
+  test: 532px,
+  phone: 576px,
+  tablet: 780px,
+  desktop: 992px,
+  l-desktop: 1200px,
+) !default;
+
+@mixin responsive-display($width, $type: min) {
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+    @if $type == max {
+      $width: $width - 1px;
+    }
+    @media only screen and (#{$type}-width: $width) {
+      @content;
+    }
+  }
+}
+
+/* @mixin screenSize($screensize) {
+  @if ($screensize==large) {
+    @media (max-width: 992px) {
+      @content;
+    }
+  }
+  @if ($screensize==medium) {
+    @media (max-width: 720px) {
+      @content;
+    }
+  }
+  @if ($screensize==small) {
+    @media (max-width: 576px) {
+      @content;
+    }
+  }
+} */
