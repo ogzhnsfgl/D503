@@ -615,6 +615,7 @@ img {
             order: 4;
     -ms-grid-column-align: center;
         justify-self: center;
+    margin: 0 1rem;
   }
 }
 
