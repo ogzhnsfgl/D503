@@ -14,10 +14,7 @@
  * @todo itemsScaleUp
  * @todo Test Zepto
  * @todo stagePadding calculate wrong active classes
- * 
  */
-*.html linguist-detectable=false
-
 ;(function($, window, document, undefined) {
 
 	/**
