@@ -201,6 +201,14 @@
       height: 85%;
       object-fit: cover;
     }
+    h4 {
+      @include responsive-display(tablet, max) {
+        font-size: 1.4rem;
+      }
+      @include responsive-display(phone, max) {
+        font-size: 1.2rem;
+      }
+    }
   }
 
   &:hover .card-front {

@@ -302,6 +302,18 @@ Shorthand below
      object-fit: cover;
 }
 
+@media only screen and (max-width: 779px) {
+  .card-front h4 {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .card-front h4 {
+    font-size: 1.2rem;
+  }
+}
+
 .card:hover .card-front {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
@@ -421,6 +433,7 @@ Shorthand below
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth !important;
 }
 
 html {
@@ -451,6 +464,7 @@ main {
 
 section {
   padding: 6rem 0;
+  scroll-behavior: smooth;
 }
 
 @media only screen and (max-width: 779px) {
@@ -506,6 +520,12 @@ h2 {
 
 h3 {
   font-size: 2.4rem;
+}
+
+@media only screen and (max-width: 779px) {
+  h3 {
+    font-size: 1.5rem;
+  }
 }
 
 h4 {
@@ -1897,6 +1917,12 @@ img {
 
 .contact-content-detail ul li p {
   font-size: 1.4rem;
+}
+
+@media only screen and (max-width: 779px) {
+  .contact-content-detail ul li p {
+    font-size: 1.2rem;
+  }
 }
 
 .contact-content-form {

@@ -10,6 +10,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth !important;
 }
 
 html {
@@ -42,6 +43,7 @@ section {
   @include responsive-display(phone, max) {
     padding: 3rem 0;
   }
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -76,6 +78,9 @@ h2 {
 
 h3 {
   font-size: 2.4rem;
+  @include responsive-display(tablet, max) {
+    font-size: 1.5rem;
+  }
 }
 
 h4 {
@@ -1083,6 +1088,9 @@ img {
 
           p {
             font-size: 1.4rem;
+            @include responsive-display(tablet, max) {
+              font-size: 1.2rem;
+            }
           }
         }
       }
